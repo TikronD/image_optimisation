@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Optimisation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Image optimisation</h1>
+    <p>Different image sizes load depending on screen size</p>
+    <img
+      src="https://picsum.photos/2000/1000"
+      alt="Image"
+      srcset="
+        https://picsum.photos/500/250    500w,
+        https://picsum.photos/1000/500  1000w,
+        https://picsum.photos/1500/750  1500w,
+        https://picsum.photos/2000/1000 2000w
+      "
+    />
+  </body>
+</html>
